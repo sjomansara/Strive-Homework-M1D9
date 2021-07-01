@@ -18,7 +18,7 @@ window.addEventListener("load",function() { displayAllNumbers() })
 
 const randomNumber = function() {
     let random = Math.random() * 76
-    random = Math.ceil(random)
+    random = Math.floor(random)
     let elements = document.getElementsByClassName("number")
     let randomElement = elements[random]
     randomElement.classList.add("selected")
