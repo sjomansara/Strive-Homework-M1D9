@@ -6,6 +6,12 @@ const displayAllNumbers = function() {
         newBingoNumber.innerText = bingoNumber
         newBingoNumber.classList.add("number")
         bingoContainerNode.appendChild(newBingoNumber)
+        if (bingoNumber === 38) {
+            let freeSpace = document.createElement("div") 
+            freeSpace.innerText = "Free"
+            freeSpace.classList.add("empty")
+            bingoContainerNode.appendChild(freeSpace)
+        }
     }
 }
 window.addEventListener("load",function() { displayAllNumbers() })
