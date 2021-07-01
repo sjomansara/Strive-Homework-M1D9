@@ -22,10 +22,15 @@
     border-style: solid;
     color: #ffffff
 }
+
 body {
     background-color: #ffffff;
     color: #bc85ff;
     max-width: 1280px;
     margin: 0 auto;
     text-align: center;
+}
+
+.selected {
+    background-color: #f8d432 !important;
 }
